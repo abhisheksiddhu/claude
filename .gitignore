@@ -1,0 +1,37 @@
+# ~/.claude sync surface — blacklist style: track config, ignore runtime/secrets.
+# New config files appear in `git status` for review; add junk here as it shows up.
+
+# secrets
+.credentials.json
+*.pem
+*.key
+*.token
+.env
+.env.*
+
+# session state / runtime / caches (all regenerable)
+projects/
+file-history/
+*-cache/
+cache/
+sessions/
+session-env/
+tasks/
+jobs/
+plans/
+backups/
+ide/
+downloads/
+plugins/
+statsig/
+logs/
+paste-cache
+daemon*
+history.jsonl
+stats-cache.json
+.thinking-cache/
+.caveman-active.*
+.prune-stamp
+.last-*
+shell-snapshots
+telemetry
